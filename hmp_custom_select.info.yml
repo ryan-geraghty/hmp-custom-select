@@ -1,0 +1,5 @@
+name: 'HMP Custom Select'
+type: module
+description: 'Custom theme on select elements'
+package: Custom
+core_version_requirement: ^9 || ^10 || ^11

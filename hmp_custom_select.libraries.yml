@@ -1,0 +1,11 @@
+# Custom library for general purposes.
+hmp-custom-selects:
+  js:
+    js/custom-select.js: {}
+  css:
+    component:
+      css/custom-select.css: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery
+    - core/once

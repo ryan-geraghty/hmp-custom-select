@@ -1,0 +1,11 @@
+{
+	"name": "hmp-global/hmp-custom-select",
+	"description": "Custom theme on select elements.",
+	"type": "drupal-module",
+	"authors": [
+		{
+			"name": "Ryan Geraghty",
+			"email": "rgeraghty@hmpglobal.com"
+		}
+	]
+}

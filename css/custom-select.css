@@ -1,0 +1,120 @@
+/**
+ * Dropdown Styling
+ */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2300A3A4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  border-radius: 100px;
+}
+
+.form-type-select {
+  position: relative;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.dropdown-appearance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 6px 6px 20px;
+  border: 1.5px solid #F0EFEF;
+  border-radius: 100px;
+  background-color: #F0EFEF;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown-appearance.open,
+.dropdown-appearance:focus,
+.dropdown-appearance:hover,
+input:focus,
+input:focus-visible,
+input:hover {
+   border: 1.5px solid #00A3A4;
+   outline: none;
+ }
+
+.dropdown-value-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.dropdown-value {
+  color: #333333;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.dropdown-arrow {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background-color: #00A3A4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.dropdown-arrow svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dropdown-appearance.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #F0EFEF;
+  border: 1px solid #1A1A1B19;
+  border-radius: 8px;
+  margin-top: 4px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item.highlight {
+  border-radius: 100px;
+  background: rgba(181, 181, 181, 0.20);
+}
+
+.dropdown-item.selected {
+  color: #00A3A4;
+  font-weight: 500;
+}
